@@ -15,31 +15,27 @@ using System.Web.Http.Description;
 
 namespace Organic_Food_Network_API.Controllers
 {
-    public class SignUpController : ApiController
+    public class LoginController : ApiController
     {
         private Entities db = new Entities();
 
-        // POST: api/SignUp
+        // POST: api/Login
         [ResponseType(typeof(Person))]
         public async Task<IHttpActionResult> PostPerson(Person person)
         {
             var json = JsonConvert.SerializeObject(person);
-
             
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (NameExist(person.Name))
-            {
-                return Ok("Name already Exist");
-            }
+            
+            var res = await db.People.Where(p => p.Name == person.Name && p.Password == person.Password).FirstOrDefaultAsync();
+            if(res == null)
+                return Ok("Username or password doesn't match");
 
-            db.People.Add(person);
-            await db.SaveChangesAsync();
-
-            return CreatedAtRoute("DefaultApi", new { id = person.Id }, person);
+            return CreatedAtRoute("DefaultApi", new { id = res.Id }, res);
         }
         
 
@@ -53,9 +49,6 @@ namespace Organic_Food_Network_API.Controllers
         }
 
         
-        private bool NameExist(string name)
-        {
-            return db.People.Count(e => (e.Name == name)) > 0;
-        }
+        
     }
 }
