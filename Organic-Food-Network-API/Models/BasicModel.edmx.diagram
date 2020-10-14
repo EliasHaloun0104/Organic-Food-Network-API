@@ -7,7 +7,7 @@
       <Diagram DiagramId="4a00341b11db4bbda93927788c37bf04" Name="Diagram1">
         <EntityTypeShape EntityType="Organic_Food_Network_DB.BasicModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Organic_Food_Network_DB.BasicModel.Person" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Organic_Food_Network_DB.BasicModel.Product" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Organic_Food_Network_DB.BasicModel.Product" Width="1.5" PointX="5.5" PointY="0.875" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

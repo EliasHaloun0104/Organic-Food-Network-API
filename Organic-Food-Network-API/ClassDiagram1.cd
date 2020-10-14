@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Organic_Food_Network_API.Controllers.PeopleController">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAQAAAAAAAAgAAAAAAAJAAAAAAAAAgAAAE=</HashCode>
+      <FileName>Controllers\PeopleController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Organic_Food_Network_API.Controllers.ProductsController">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAQAAAAAAAAAAgAAAAAAAAAQAAACAAAAIA=</HashCode>
+      <FileName>Controllers\ProductsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Organic_Food_Network_API.Controllers.LoginController">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAQAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\LoginController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Organic_Food_Network_API.Controllers.ProductsByUserController">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAQAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ProductsByUserController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Organic_Food_Network_API.Controllers.SignUpController">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAQAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\SignUpController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Organic_Food_Network_API.Models.Product">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAEgAAAEAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Organic_Food_Network_API.Models.Person">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAEAIAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
