@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Organic_Food_Network_API.Models;
@@ -20,6 +21,7 @@ namespace Organic_Food_Network_API.Controllers
         // GET: api/ProductsByUser
         public IQueryable<Product> GetProducts(int id)
         {
+            //HttpContext.Current.Response.Headers.Add("AccessToken", "44444444-444444444");
             return db.Products.OrderByDescending(e => e.DateCreated).Where(e=> e.PersonID == id).Take(10);
         }
 
